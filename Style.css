@@ -1,0 +1,93 @@
+body {
+  font-family: 'Lato', sans-serif;
+  }
+
+h1 {
+  font-family: 'Eczar', serif;
+}
+
+/* HEADER */
+
+.header  .container-fluid {
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  justify-content: space-between;
+  }
+
+.intro h1 {
+  font-size: 20px;
+  padding-bottom: 10px;
+  align-items: center;
+  margin-bottom: 0;
+  padding-bottom: 0px;
+}
+
+.intro h2 {
+  margin-top: -20px;
+  font-size: 14px;
+}
+
+.menu a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+  /* removes underline from all <a> tags in the element */
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu a {
+  padding-left: 30px;
+  }
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: black;
+}
+
+/* BIO */
+
+.bio .container-fluid {
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+
+
+
+/* RESPONSIVENESS */
+
+@media screen and (min-width: 768px) {
+
+  .burger {
+  display: none;
+  }
+
+  .header .container-fluid {
+    padding: 60px 100px 0px 100px;
+  }
+
+
+    .bio .container-fluid {
+      padding: 60px 100px 0px 100px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .bigtext p {
+    text-align: center;
+  }
+
+  .menu {
+  display: none;
+  }
+
+}
